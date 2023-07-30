@@ -1,0 +1,16 @@
+
+
+<div class="container">
+
+        <% @comments.each do |comment| %>  
+        <img src=<%=render "layouts/shared/avatar", class:'card-img-top'%> />
+<div class="card col-3">
+    
+    <div class="card-body"> 
+    <h5 class="card-title"><%= comment.content %></h5>
+    <p class="card-text"><%=comment.user.email%></p>
+    
+  </div>
+</div>
+<% end %>
+</div>

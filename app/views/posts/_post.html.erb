@@ -1,0 +1,21 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= post.description %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= post.user_id %>
+  </p>
+  <%post.images.each do |im|%>
+  <div style class="col-3">
+  <%= image_tag im, style:"height:500px;"%>
+  </div>
+  <%end%>
+
