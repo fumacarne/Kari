@@ -11,11 +11,16 @@
 
   <p>
     <strong>User:</strong>
-    <%= post.user_id %>
+    <%= post.user.name %>
   </p>
   <%post.images.each do |im|%>
+  <div class="d-flex justify-content-center">
   <div style class="col-3">
-  <%= image_tag im, style:"height:500px;"%>
+  <%= image_tag im, style:"height:600px;"%>
+   <%= link_to "Show this post", post %>
+  </div>
   </div>
   <%end%>
+  <br>
+  <br>
 

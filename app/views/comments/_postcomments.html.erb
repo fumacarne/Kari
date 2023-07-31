@@ -3,8 +3,8 @@
 <div class="container">
 
         <% @comments.each do |comment| %>  
-        <img src=<%=render "layouts/shared/avatar", class:'card-img-top'%> />
 <div class="card col-3">
+       <%=render '/layouts/shared/avatar'%>
     
     <div class="card-body"> 
     <h5 class="card-title"><%= comment.content %></h5>

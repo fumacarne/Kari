@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: Karipic_production
-  username: Karipic
-  password: <%= ENV["KARIPIC_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
